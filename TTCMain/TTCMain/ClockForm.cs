@@ -67,6 +67,19 @@ namespace TTCMain
         {
             closeButton.FlatStyle = FlatStyle.Flat;
             closeButton.FlatAppearance.BorderSize = 0;
+
+            if (Form1.theme == "dark")
+            {
+                this.BackColor = Form1.dark;
+                timeLabel.BackColor = Form1.dark;
+                timeLabel.ForeColor = Color.White;
+            }
+            else if (Form1.theme == "light")
+            {
+                this.BackColor = Color.White;
+                timeLabel.BackColor = Color.White;
+                timeLabel.ForeColor = Color.Black;
+            }
         }
 
     }

@@ -41,11 +41,11 @@
             // 
             // timeLabel
             // 
-            this.timeLabel.Font = new System.Drawing.Font("Digital-7", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft PhagsPa", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.ForeColor = System.Drawing.Color.Black;
-            this.timeLabel.Location = new System.Drawing.Point(-13, 7);
+            this.timeLabel.Location = new System.Drawing.Point(-13, 1);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(241, 82);
+            this.timeLabel.Size = new System.Drawing.Size(241, 88);
             this.timeLabel.TabIndex = 1;
             this.timeLabel.Text = "00:00";
             this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

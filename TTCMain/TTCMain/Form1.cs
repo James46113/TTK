@@ -12,6 +12,9 @@ namespace TTCMain
 {
     public partial class Form1 : Form
     {
+        static public string theme = "light";
+        static public Color dark = Color.FromArgb(50, 50, 50);
+
         public Point MouseDownLocation;
         string time;
         int timeNum;
@@ -87,6 +90,57 @@ namespace TTCMain
             }
 
             infoBox.Text = time + "\r\n" + perInf[periodInfoNum];
+        }
+
+        private void lightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            theme = "light";
+            this.BackColor = Color.White;
+            menuStrip1.BackColor = Color.White;
+            menuStrip1.ForeColor = Color.Black;
+            lightToolStripMenuItem.BackColor = Color.White;
+            lightToolStripMenuItem.ForeColor = Color.Black;
+            darkToolStripMenuItem.BackColor = Color.White;
+            darkToolStripMenuItem.ForeColor = Color.Black;
+            infoBox.BackColor = Color.White;
+            infoBox.ForeColor = Color.Black;
+            timerButton.BackColor = Color.White;
+            timerButton.ForeColor = Color.Black;
+            diceButton.BackColor = Color.White;
+            diceButton.ForeColor = Color.Black;
+            randStuButton.BackColor = Color.White;
+            randStuButton.ForeColor = Color.Black;
+            clockButton.BackColor = Color.White;
+            clockButton.ForeColor = Color.Black;
+            label1.Focus();
+        }
+
+        private void darkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            theme = "dark";
+            this.BackColor = dark;
+            menuStrip1.BackColor = dark;
+            menuStrip1.ForeColor = Color.White;
+            lightToolStripMenuItem.BackColor = dark;
+            lightToolStripMenuItem.ForeColor = Color.White;
+            darkToolStripMenuItem.BackColor = dark;
+            darkToolStripMenuItem.ForeColor = Color.White;
+            infoBox.BackColor = dark;
+            infoBox.ForeColor = Color.White;
+            timerButton.BackColor = dark;
+            timerButton.ForeColor = Color.White;
+            diceButton.BackColor = dark;
+            diceButton.ForeColor = Color.White;
+            randStuButton.BackColor = dark;
+            randStuButton.ForeColor = Color.White;
+            clockButton.BackColor = dark;
+            clockButton.ForeColor = Color.White;
+            label1.Focus();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
