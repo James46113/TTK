@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RandomStudentForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,7 +63,7 @@
             // importClassToolStripMenuItem
             // 
             this.importClassToolStripMenuItem.Name = "importClassToolStripMenuItem";
-            this.importClassToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importClassToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.importClassToolStripMenuItem.Text = "Import Class";
             this.importClassToolStripMenuItem.Click += new System.EventHandler(this.importClassToolStripMenuItem_Click_1);
             // 
@@ -142,8 +143,9 @@
             this.Controls.Add(this.chooseButton);
             this.Controls.Add(this.studentsBox);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RandomStudentForm";
-            this.Text = "RandomStudentForm";
+            this.Text = "Random Student Picker";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RandomStudentForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.RandomStudentForm_MouseMove);
             this.menuStrip1.ResumeLayout(false);

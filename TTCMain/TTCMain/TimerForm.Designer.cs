@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimerForm));
             this.Reset = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.add10 = new System.Windows.Forms.Button();
@@ -136,8 +137,9 @@
             this.Controls.Add(this.add60);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TimerForm";
-            this.Text = "TimerForm";
+            this.Text = "Timer";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TimerForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TimerForm_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

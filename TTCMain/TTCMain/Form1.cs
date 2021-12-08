@@ -13,6 +13,11 @@ namespace TTCMain
     public partial class Form1 : Form
     {
         public Point MouseDownLocation;
+        string time;
+        int timeNum;
+        int periodInfoNum;
+        List<string> perInf = new List<string>() { "Period 1\r\nEnds at 9:35", "Period 2\r\nEnds at 10:30", "Tutor 1\r\nEnds at 10:45", "Tutor 2\r\n Ends at 11:00", "Tutor 3\r\nEnds at 11:15", "Period 3\r\nEnds at 12:10", "Period 4a\r\nEnds at 12:40", "Period 4b\r\nEnds at 13:10", "Period 4c\r\nEnds at 13:40", "Period 5\r\nEnds at 14:35", "Period 6\r\nEnds at 15:25(Y10) 15:30(Y11)" };
+        List<int> perInd = new List<int>() { 575, 630, 645, 660, 615, 730, 760, 790, 820, 875, 930};
         public Form1()
         {
             InitializeComponent();
@@ -65,6 +70,23 @@ namespace TTCMain
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             Mouse_Move(e);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time = DateTime.Now.ToString("HH:mm:ss");
+
+            timeNum = int.Parse(DateTime.Now.ToString("HH"))*60 + int.Parse(DateTime.Now.ToString("mm"));
+            foreach (int item in perInd)
+            {
+                if (timeNum < item)
+                {
+                    periodInfoNum = perInd.IndexOf(item);
+                    break;
+                }
+            }
+
+            infoBox.Text = time + "\r\n" + perInf[periodInfoNum];
         }
     }
 }

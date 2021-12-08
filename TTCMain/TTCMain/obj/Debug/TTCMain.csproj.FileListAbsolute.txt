@@ -12,3 +12,17 @@ G:\James\TTCMain\TTCMain\obj\Debug\TTCMain.pdb
 G:\James\TTCMain\TTCMain\obj\Debug\TTCMain.DiceForm.resources
 G:\James\TTCMain\TTCMain\obj\Debug\TTCMain.RandomStudentForm.resources
 G:\James\TTCMain\TTCMain\obj\Debug\TTCMain.ClockForm.resources
+G:\James\TTK\TTCMain\TTCMain\bin\Debug\TTCMain.exe.config
+G:\James\TTK\TTCMain\TTCMain\bin\Debug\TTCMain.exe
+G:\James\TTK\TTCMain\TTCMain\bin\Debug\TTCMain.pdb
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csprojAssemblyReference.cache
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.ClockForm.resources
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.DiceForm.resources
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.Form1.resources
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.Properties.Resources.resources
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.RandomStudentForm.resources
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.TimerForm.resources
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.GenerateResource.cache
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.CoreCompileInputs.cache
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.exe
+G:\James\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.pdb

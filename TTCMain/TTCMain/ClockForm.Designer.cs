@@ -72,7 +72,7 @@
             this.Controls.Add(this.timeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClockForm";
-            this.Text = "ClockForm";
+            this.Text = "Clock";
             this.Load += new System.EventHandler(this.ClockForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ClockForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ClockForm_MouseMove);

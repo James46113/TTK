@@ -68,5 +68,6 @@ namespace TTCMain
             closeButton.FlatStyle = FlatStyle.Flat;
             closeButton.FlatAppearance.BorderSize = 0;
         }
+
     }
 }
