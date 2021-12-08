@@ -97,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 308);
+            this.ClientSize = new System.Drawing.Size(242, 312);
             this.Controls.Add(this.infoBox);
             this.Controls.Add(this.clockButton);
             this.Controls.Add(this.randStuButton);
