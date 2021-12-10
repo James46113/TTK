@@ -15,6 +15,7 @@ namespace TTCMain
         float countDown = 1000;
         Random rnd = new Random();
         public Point MouseDownLocation;
+        Color green = Color.Chartreuse;
         public DiceForm()
         {
             InitializeComponent();
@@ -38,8 +39,8 @@ namespace TTCMain
             label1.Text = rnd.Next(1, 7).ToString();
             if (countDown < 0)
             {
-                label1.BackColor = Color.Chartreuse;
-                pictureBox1.BackColor = Color.Chartreuse;
+                label1.BackColor = green;
+                pictureBox1.BackColor = green;
                 countDown = 1000;
                 timer1.Enabled = false;
             }
@@ -90,6 +91,20 @@ namespace TTCMain
         private void label1_MouseMove(object sender, MouseEventArgs e)
         {
             Mouse_Move(e);
+        }
+
+        private void DiceForm_Load(object sender, EventArgs e)
+        {
+            if (Form1.theme == "dark")
+            {
+                BackColor = Form1.dark;
+                label1.BackColor = Form1.dark;
+                label1.ForeColor = Color.White;
+                pictureBox1.BackColor = Form1.dark;
+                button1.BackColor = Form1.dark;
+                button1.ForeColor = Color.White;
+                green = Color.DarkGreen;
+            }
         }
     }
 }

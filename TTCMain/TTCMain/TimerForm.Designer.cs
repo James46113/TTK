@@ -44,7 +44,8 @@
             // Reset
             // 
             this.Reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Reset.Location = new System.Drawing.Point(11, 249);
+            this.Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reset.Location = new System.Drawing.Point(11, 258);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(220, 24);
             this.Reset.TabIndex = 14;
@@ -68,9 +69,10 @@
             // add10
             // 
             this.add10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add10.Location = new System.Drawing.Point(12, 120);
             this.add10.Name = "add10";
-            this.add10.Size = new System.Drawing.Size(221, 20);
+            this.add10.Size = new System.Drawing.Size(221, 23);
             this.add10.TabIndex = 11;
             this.add10.Text = "+ 30 Seconds";
             this.add10.UseVisualStyleBackColor = true;
@@ -79,9 +81,10 @@
             // add30
             // 
             this.add30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add30.Location = new System.Drawing.Point(12, 146);
+            this.add30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add30.Location = new System.Drawing.Point(12, 149);
             this.add30.Name = "add30";
-            this.add30.Size = new System.Drawing.Size(221, 20);
+            this.add30.Size = new System.Drawing.Size(221, 23);
             this.add30.TabIndex = 10;
             this.add30.Text = "+ 2 Minutes";
             this.add30.UseVisualStyleBackColor = true;
@@ -90,9 +93,10 @@
             // add60
             // 
             this.add60.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add60.Location = new System.Drawing.Point(12, 172);
+            this.add60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add60.Location = new System.Drawing.Point(12, 178);
             this.add60.Name = "add60";
-            this.add60.Size = new System.Drawing.Size(221, 20);
+            this.add60.Size = new System.Drawing.Size(221, 23);
             this.add60.TabIndex = 9;
             this.add60.Text = "+ 5 Minutes";
             this.add60.UseVisualStyleBackColor = true;
@@ -101,7 +105,8 @@
             // startButton
             // 
             this.startButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.startButton.Location = new System.Drawing.Point(11, 198);
+            this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startButton.Location = new System.Drawing.Point(11, 207);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(221, 45);
             this.startButton.TabIndex = 8;
@@ -140,6 +145,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TimerForm";
             this.Text = "Timer";
+            this.Load += new System.EventHandler(this.TimerForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TimerForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TimerForm_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

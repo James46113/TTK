@@ -85,6 +85,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DiceForm";
             this.Text = "DiceForm";
+            this.Load += new System.EventHandler(this.DiceForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DiceForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DiceForm_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

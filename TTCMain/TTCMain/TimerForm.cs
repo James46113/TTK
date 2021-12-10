@@ -200,6 +200,27 @@ namespace TTCMain
         {
             Mouse_Move(e);
         }
+
+        private void TimerForm_Load(object sender, EventArgs e)
+        {
+            if (Form1.theme == "dark")
+            {
+                BackColor = Form1.dark;
+                label1.BackColor = Form1.dark;
+                pictureBox1.BackColor = Form1.dark;
+                add10.BackColor = Form1.dark;
+                add30.BackColor = Form1.dark;
+                add60.BackColor = Form1.dark;
+                startButton.BackColor = Form1.dark;
+                Reset.BackColor = Form1.dark;
+                label1.ForeColor = Color.White;
+                add10.ForeColor = Color.White;
+                add30.ForeColor = Color.White;
+                add60.ForeColor = Color.White;
+                startButton.ForeColor = Color.White;
+                Reset.ForeColor = Color.White;
+            }
+        }
     }
 
 }

@@ -30,7 +30,6 @@ namespace TTCMain
         {
             TimerForm timerForm = new TimerForm();
             timerForm.Show();
-            Console.WriteLine("hi");
         }
 
         private void diceButton_Click(object sender, EventArgs e)
@@ -90,7 +89,9 @@ namespace TTCMain
                 }
             }
 
-            infoBox.Text = time + "\r\n" + perInf[periodInfoNum];
+            timeLabel.Text = time;
+            periodLabel.Text = perInf[periodInfoNum];
+            //infoBox.Text = time + "\r\n" + perInf[periodInfoNum];
         }
 
         private void lightToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,8 +104,6 @@ namespace TTCMain
             lightToolStripMenuItem.ForeColor = Color.Black;
             darkToolStripMenuItem.BackColor = Color.White;
             darkToolStripMenuItem.ForeColor = Color.Black;
-            infoBox.BackColor = Color.White;
-            infoBox.ForeColor = Color.Black;
             timerButton.BackColor = Color.White;
             timerButton.ForeColor = Color.Black;
             diceButton.BackColor = Color.White;
@@ -126,8 +125,6 @@ namespace TTCMain
             lightToolStripMenuItem.ForeColor = Color.White;
             darkToolStripMenuItem.BackColor = dark;
             darkToolStripMenuItem.ForeColor = Color.White;
-            infoBox.BackColor = dark;
-            infoBox.ForeColor = Color.White;
             timerButton.BackColor = dark;
             timerButton.ForeColor = Color.White;
             diceButton.BackColor = dark;

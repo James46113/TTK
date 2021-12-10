@@ -34,20 +34,22 @@
             this.diceButton = new System.Windows.Forms.Button();
             this.randStuButton = new System.Windows.Forms.Button();
             this.clockButton = new System.Windows.Forms.Button();
-            this.infoBox = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.periodLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timerButton
             // 
             this.timerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.timerButton.Location = new System.Drawing.Point(12, 126);
+            this.timerButton.Location = new System.Drawing.Point(36, 117);
             this.timerButton.Name = "timerButton";
             this.timerButton.Size = new System.Drawing.Size(102, 88);
             this.timerButton.TabIndex = 0;
@@ -58,7 +60,7 @@
             // diceButton
             // 
             this.diceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.diceButton.Location = new System.Drawing.Point(128, 127);
+            this.diceButton.Location = new System.Drawing.Point(155, 117);
             this.diceButton.Name = "diceButton";
             this.diceButton.Size = new System.Drawing.Size(102, 88);
             this.diceButton.TabIndex = 1;
@@ -69,7 +71,7 @@
             // randStuButton
             // 
             this.randStuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.randStuButton.Location = new System.Drawing.Point(12, 227);
+            this.randStuButton.Location = new System.Drawing.Point(274, 117);
             this.randStuButton.Name = "randStuButton";
             this.randStuButton.Size = new System.Drawing.Size(101, 88);
             this.randStuButton.TabIndex = 2;
@@ -80,23 +82,13 @@
             // clockButton
             // 
             this.clockButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clockButton.Location = new System.Drawing.Point(128, 227);
+            this.clockButton.Location = new System.Drawing.Point(389, 117);
             this.clockButton.Name = "clockButton";
             this.clockButton.Size = new System.Drawing.Size(102, 88);
             this.clockButton.TabIndex = 3;
             this.clockButton.Text = "Clock";
             this.clockButton.UseVisualStyleBackColor = true;
             this.clockButton.Click += new System.EventHandler(this.clockButton_Click);
-            // 
-            // infoBox
-            // 
-            this.infoBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infoBox.Location = new System.Drawing.Point(12, 25);
-            this.infoBox.Multiline = true;
-            this.infoBox.Name = "infoBox";
-            this.infoBox.ReadOnly = true;
-            this.infoBox.Size = new System.Drawing.Size(218, 74);
-            this.infoBox.TabIndex = 4;
             // 
             // timer1
             // 
@@ -109,7 +101,7 @@
             this.themeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(242, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(726, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -144,18 +136,50 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 6;
             // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.Location = new System.Drawing.Point(11, 29);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(103, 29);
+            this.timeLabel.TabIndex = 7;
+            this.timeLabel.Text = "00:00:00";
+            // 
+            // periodLabel
+            // 
+            this.periodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.periodLabel.Location = new System.Drawing.Point(530, 29);
+            this.periodLabel.Name = "periodLabel";
+            this.periodLabel.Size = new System.Drawing.Size(184, 73);
+            this.periodLabel.TabIndex = 8;
+            this.periodLabel.Text = "label3";
+            this.periodLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(702, 63);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Teacher Toolkit";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 325);
-            this.Controls.Add(this.infoBox);
+            this.ClientSize = new System.Drawing.Size(726, 231);
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.clockButton);
             this.Controls.Add(this.randStuButton);
             this.Controls.Add(this.diceButton);
             this.Controls.Add(this.timerButton);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.periodLabel);
+            this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -176,13 +200,15 @@
         private System.Windows.Forms.Button diceButton;
         private System.Windows.Forms.Button randStuButton;
         private System.Windows.Forms.Button clockButton;
-        private System.Windows.Forms.TextBox infoBox;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label periodLabel;
+        private System.Windows.Forms.Label label2;
     }
 }
 
