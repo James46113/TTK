@@ -72,6 +72,12 @@
     <Compile Include="RandomStudentForm.Designer.cs">
       <DependentUpon>RandomStudentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeatingplangenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatingplangenForm.Designer.cs">
+      <DependentUpon>SeatingplangenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="RandomStudentForm.resx">
       <DependentUpon>RandomStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatingplangenForm.resx">
+      <DependentUpon>SeatingplangenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimerForm.resx">
       <DependentUpon>TimerForm.cs</DependentUpon>

@@ -40,3 +40,4 @@ G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.GenerateResource.cac
 G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.CoreCompileInputs.cache
 G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.exe
 G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.pdb
+G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.SeatingplangenForm.resources

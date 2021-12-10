@@ -43,6 +43,7 @@
             this.timeLabel = new System.Windows.Forms.Label();
             this.periodLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,6 +146,8 @@
             this.timeLabel.Size = new System.Drawing.Size(103, 29);
             this.timeLabel.TabIndex = 7;
             this.timeLabel.Text = "00:00:00";
+            this.timeLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
+            this.timeLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
             // 
             // periodLabel
             // 
@@ -155,22 +158,38 @@
             this.periodLabel.TabIndex = 8;
             this.periodLabel.Text = "label3";
             this.periodLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.periodLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
+            this.periodLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 39);
+            this.label2.Location = new System.Drawing.Point(6, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(702, 63);
             this.label2.TabIndex = 9;
             this.label2.Text = "Teacher Toolkit";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(508, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 88);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Seating \r\nPlanGenerator";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 231);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.clockButton);
             this.Controls.Add(this.randStuButton);
@@ -209,6 +228,7 @@
         private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Label periodLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

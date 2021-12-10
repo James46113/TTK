@@ -112,6 +112,12 @@ namespace TTCMain
             randStuButton.ForeColor = Color.Black;
             clockButton.BackColor = Color.White;
             clockButton.ForeColor = Color.Black;
+            timeLabel.BackColor = Color.White;
+            timeLabel.ForeColor = Color.Black;
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Black;
+            periodLabel.BackColor = Color.White;
+            periodLabel.ForeColor = Color.Black;
             label1.Focus();
         }
 
@@ -133,12 +139,34 @@ namespace TTCMain
             randStuButton.ForeColor = Color.White;
             clockButton.BackColor = dark;
             clockButton.ForeColor = Color.White;
+            timeLabel.BackColor = dark;
+            timeLabel.ForeColor = Color.White;
+            label2.BackColor = dark;
+            label2.ForeColor = Color.White;
+            periodLabel.BackColor = dark;
+            periodLabel.ForeColor = Color.White;
             label1.Focus();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void label2_MouseDown(object sender, MouseEventArgs e)
+        {
+            Mouse_Down(e);
+        }
+
+        private void label2_MouseMove(object sender, MouseEventArgs e)
+        {
+            Mouse_Move(e);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SeatingplangenForm f = new SeatingplangenForm();
+            f.Show();
         }
     }
 }
