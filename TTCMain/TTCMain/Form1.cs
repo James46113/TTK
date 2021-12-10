@@ -30,6 +30,7 @@ namespace TTCMain
         {
             TimerForm timerForm = new TimerForm();
             timerForm.Show();
+            Console.WriteLine("hi");
         }
 
         private void diceButton_Click(object sender, EventArgs e)
