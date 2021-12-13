@@ -43,7 +43,7 @@
             this.timeLabel = new System.Windows.Forms.Label();
             this.periodLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.seatplanbutton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             // diceButton
             // 
             this.diceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.diceButton.Location = new System.Drawing.Point(155, 117);
+            this.diceButton.Location = new System.Drawing.Point(168, 117);
             this.diceButton.Name = "diceButton";
             this.diceButton.Size = new System.Drawing.Size(102, 88);
             this.diceButton.TabIndex = 1;
@@ -72,7 +72,7 @@
             // randStuButton
             // 
             this.randStuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.randStuButton.Location = new System.Drawing.Point(274, 117);
+            this.randStuButton.Location = new System.Drawing.Point(295, 117);
             this.randStuButton.Name = "randStuButton";
             this.randStuButton.Size = new System.Drawing.Size(101, 88);
             this.randStuButton.TabIndex = 2;
@@ -83,7 +83,7 @@
             // clockButton
             // 
             this.clockButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clockButton.Location = new System.Drawing.Point(389, 117);
+            this.clockButton.Location = new System.Drawing.Point(427, 117);
             this.clockButton.Name = "clockButton";
             this.clockButton.Size = new System.Drawing.Size(102, 88);
             this.clockButton.TabIndex = 3;
@@ -173,23 +173,23 @@
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
             this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
             // 
-            // button1
+            // seatplanbutton
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(508, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 88);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Seating \r\nPlanGenerator";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.seatplanbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.seatplanbutton.Location = new System.Drawing.Point(559, 117);
+            this.seatplanbutton.Name = "seatplanbutton";
+            this.seatplanbutton.Size = new System.Drawing.Size(102, 88);
+            this.seatplanbutton.TabIndex = 10;
+            this.seatplanbutton.Text = "Seating \r\nPlanGenerator";
+            this.seatplanbutton.UseVisualStyleBackColor = true;
+            this.seatplanbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 231);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.seatplanbutton);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.clockButton);
             this.Controls.Add(this.randStuButton);
@@ -228,7 +228,7 @@
         private System.Windows.Forms.Label timeLabel;
         private System.Windows.Forms.Label periodLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button seatplanbutton;
     }
 }
 

@@ -41,3 +41,18 @@ G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.CoreCompileInputs.ca
 G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.exe
 G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.pdb
 G:\James Caroe\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.SeatingplangenForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\bin\Debug\TTCMain.exe.config
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\bin\Debug\TTCMain.exe
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\bin\Debug\TTCMain.pdb
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csprojAssemblyReference.cache
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.ClockForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.DiceForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.Form1.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.Properties.Resources.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.RandomStudentForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.SeatingplangenForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.TimerForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.GenerateResource.cache
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.CoreCompileInputs.cache
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.exe
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.pdb

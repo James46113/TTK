@@ -118,6 +118,8 @@ namespace TTCMain
             label2.ForeColor = Color.Black;
             periodLabel.BackColor = Color.White;
             periodLabel.ForeColor = Color.Black;
+            seatplanbutton.BackColor = Color.White;
+            seatplanbutton.ForeColor = Color.Black;
             label1.Focus();
         }
 
@@ -145,6 +147,8 @@ namespace TTCMain
             label2.ForeColor = Color.White;
             periodLabel.BackColor = dark;
             periodLabel.ForeColor = Color.White;
+            seatplanbutton.BackColor = dark;
+            seatplanbutton.ForeColor = Color.White;
             label1.Focus();
         }
 
