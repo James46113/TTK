@@ -42,6 +42,7 @@
             // 
             // clearButton
             // 
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Location = new System.Drawing.Point(202, 122);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(136, 63);
@@ -69,6 +70,7 @@
             // 
             // shuffleButton
             // 
+            this.shuffleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shuffleButton.Location = new System.Drawing.Point(203, 53);
             this.shuffleButton.Name = "shuffleButton";
             this.shuffleButton.Size = new System.Drawing.Size(136, 63);
@@ -79,6 +81,7 @@
             // 
             // addButton
             // 
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Location = new System.Drawing.Point(205, 316);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(136, 63);

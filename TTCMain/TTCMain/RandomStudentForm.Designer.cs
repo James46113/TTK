@@ -73,9 +73,10 @@
             // 
             // addStudentButton
             // 
+            this.addStudentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addStudentButton.Location = new System.Drawing.Point(97, 256);
             this.addStudentButton.Name = "addStudentButton";
-            this.addStudentButton.Size = new System.Drawing.Size(76, 20);
+            this.addStudentButton.Size = new System.Drawing.Size(76, 21);
             this.addStudentButton.TabIndex = 12;
             this.addStudentButton.Text = "Add Student";
             this.addStudentButton.UseVisualStyleBackColor = true;
@@ -93,6 +94,7 @@
             // 
             // resetButton
             // 
+            this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetButton.Location = new System.Drawing.Point(97, 173);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(76, 68);
@@ -113,6 +115,7 @@
             // 
             // chooseButton
             // 
+            this.chooseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chooseButton.Location = new System.Drawing.Point(97, 27);
             this.chooseButton.Name = "chooseButton";
             this.chooseButton.Size = new System.Drawing.Size(76, 68);
