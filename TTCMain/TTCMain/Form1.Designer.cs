@@ -102,7 +102,7 @@
             this.themeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(726, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -152,7 +152,8 @@
             // periodLabel
             // 
             this.periodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.periodLabel.Location = new System.Drawing.Point(530, 29);
+            this.periodLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.periodLabel.Location = new System.Drawing.Point(557, 24);
             this.periodLabel.Name = "periodLabel";
             this.periodLabel.Size = new System.Drawing.Size(184, 73);
             this.periodLabel.TabIndex = 8;
@@ -164,11 +165,12 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 14);
+            this.label2.ForeColor = System.Drawing.Color.Coral;
+            this.label2.Location = new System.Drawing.Point(120, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(702, 63);
+            this.label2.Size = new System.Drawing.Size(482, 63);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Teacher Toolkit";
+            this.label2.Text = "UTC Teacher Toolkit";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
             this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
@@ -188,7 +190,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 231);
+            this.ClientSize = new System.Drawing.Size(753, 231);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.seatplanbutton);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.clockButton);
@@ -198,7 +201,6 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.periodLabel);
-            this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
