@@ -157,7 +157,7 @@
             this.periodLabel.Name = "periodLabel";
             this.periodLabel.Size = new System.Drawing.Size(184, 73);
             this.periodLabel.TabIndex = 8;
-            this.periodLabel.Text = "label3";
+            this.periodLabel.Text = "Current Period Label";
             this.periodLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.periodLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label2_MouseDown);
             this.periodLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
@@ -204,7 +204,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "TTK";
+            this.Text = "UTC Teacher Toolkit";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);

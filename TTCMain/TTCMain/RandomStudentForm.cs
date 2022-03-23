@@ -9,6 +9,7 @@ namespace TTCMain
 {
     public partial class RandomStudentForm : Form
     {
+        
         Random rnd = new Random();
         public Point MouseDownLocation;
         public RandomStudentForm()
@@ -283,6 +284,11 @@ namespace TTCMain
         private void saveClassToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WriteClass(names);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Make help here");
         }
     }
 }

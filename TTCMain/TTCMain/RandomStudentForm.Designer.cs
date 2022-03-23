@@ -40,11 +40,13 @@
             this.studentsBox = new System.Windows.Forms.ListBox();
             this.clearButton = new System.Windows.Forms.Button();
             this.saveClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.saveClassToolStripMenuItem});
@@ -146,6 +148,18 @@
             this.saveClassToolStripMenuItem.Text = "Save Class";
             this.saveClassToolStripMenuItem.Click += new System.EventHandler(this.saveClassToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(210, -6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 37);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "🛈";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // RandomStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +172,7 @@
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.chooseButton);
             this.Controls.Add(this.studentsBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RandomStudentForm";
@@ -185,5 +200,6 @@
         private System.Windows.Forms.ListBox studentsBox;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.ToolStripMenuItem saveClassToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
