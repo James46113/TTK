@@ -18,6 +18,7 @@ namespace TTCMain
         public Point MouseDownLocation;
         string time;
         int timeNum;
+        int countdownTime;
         int periodInfoNum;
         List<string> perInf = new List<string>() { "Before School Hours", "Period 1\r\nEnds at 9:35", "Period 2\r\nEnds at 10:30", "Tutor 1\r\nEnds at 10:45", "Tutor 2\r\n Ends at 11:00", "Tutor 3\r\nEnds at 11:15", "Period 3\r\nEnds at 12:10", "Period 4a\r\nEnds at 12:40", "Period 4b\r\nEnds at 13:10", "Period 4c\r\nEnds at 13:40", "Period 5\r\nEnds at 14:35", "Period 6\r\nEnds at 15:25(Y10) 15:30(Y11)", "Period 7\r\nEnds at 16:30", "School Hours Over"};
         List<int> perInd = new List<int>() { 515, 575, 630, 645, 660, 615, 730, 760, 790, 820, 875, 930, 990, 99999999};
@@ -80,7 +81,7 @@ namespace TTCMain
             time = DateTime.Now.ToString("HH:mm:ss");
 
             timeNum = int.Parse(DateTime.Now.ToString("HH"))*60 + int.Parse(DateTime.Now.ToString("mm"));
-            Console.WriteLine(int.Parse(DateTime.Now.ToString("HH"))* 60 + int.Parse(DateTime.Now.ToString("mm")));
+
             foreach (int item in perInd)
             {
                 if (timeNum < item)
@@ -92,7 +93,12 @@ namespace TTCMain
 
             timeLabel.Text = time;
             periodLabel.Text = perInf[periodInfoNum];
-            //infoBox.Text = time + "\r\n" + perInf[periodInfoNum];
+            if (timeNum != 13)
+            {
+                countdownTime = perInd[periodInfoNum]/60*3600 + (perInd[periodInfoNum]%60)*60 - (int.Parse(DateTime.Now.ToString("HH")) * 3600 + int.Parse(DateTime.Now.ToString("mm")) * 60 + int.Parse(DateTime.Now.ToString("ss")));
+                Console.WriteLine(countdownTime);
+                countdownLabel.Text = perInf[periodInfoNum].Split(new string[] { Environment.NewLine }, StringSplitOptions.None)[0] + Convert.ToString(countdownTime/3600) + ":" + Convert.ToString(countdownTime/60) + ":" + Convert.ToString(;
+            }
         }
 
         private void lightToolStripMenuItem_Click(object sender, EventArgs e)

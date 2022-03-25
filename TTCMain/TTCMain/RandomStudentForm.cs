@@ -185,7 +185,7 @@ namespace TTCMain
 
         private List<string> LoadClass()
         {
-            int[] times = { 515, 575, 630, 645, 660, 615, 730, 760, 790, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
+            int[] times = { 515, 575, 630, 615, 730, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
             int timeNum = int.Parse(DateTime.Now.ToString("HH")) * 60 + int.Parse(DateTime.Now.ToString("mm")); // A calculation of the current time num, calculated by 60*hours + minuites
             int ind = 0;  // Index of the lesson in the array
 
@@ -220,7 +220,7 @@ namespace TTCMain
         {
             List<List<List<string>>> classData = GetAllData(); // Gets all the student data
 
-            int[] times = { 515, 575, 630, 645, 660, 615, 730, 760, 790, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
+            int[] times = { 515, 575, 630, 615, 730, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
             int timeNum = int.Parse(DateTime.Now.ToString("HH")) * 60 + int.Parse(DateTime.Now.ToString("mm")); // A calculation of the current time num, calculated by 60*hours + minuites
             int ind = 0;  // Index of the lesson in the array
             string result = ""; // Final result of the changed values
@@ -289,6 +289,15 @@ namespace TTCMain
         private void label1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Make help here");
+        }
+
+        private void studentsBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (studentsBox.SelectedIndex != -1)
+            {
+                names.Remove((string)studentsBox.Items[studentsBox.SelectedIndex]);
+                studentsBox.Items.RemoveAt(studentsBox.SelectedIndex);
+            }
         }
     }
 }

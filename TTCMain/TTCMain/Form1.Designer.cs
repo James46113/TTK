@@ -44,6 +44,7 @@
             this.periodLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.seatplanbutton = new System.Windows.Forms.Button();
+            this.countdownLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,7 +156,7 @@
             this.periodLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.periodLabel.Location = new System.Drawing.Point(557, 24);
             this.periodLabel.Name = "periodLabel";
-            this.periodLabel.Size = new System.Drawing.Size(184, 73);
+            this.periodLabel.Size = new System.Drawing.Size(184, 53);
             this.periodLabel.TabIndex = 8;
             this.periodLabel.Text = "Current Period Label";
             this.periodLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -186,11 +187,22 @@
             this.seatplanbutton.UseVisualStyleBackColor = true;
             this.seatplanbutton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // countdownLabel
+            // 
+            this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countdownLabel.Location = new System.Drawing.Point(621, 77);
+            this.countdownLabel.Name = "countdownLabel";
+            this.countdownLabel.Size = new System.Drawing.Size(120, 23);
+            this.countdownLabel.TabIndex = 11;
+            this.countdownLabel.Text = "Countdown";
+            this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 231);
+            this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.seatplanbutton);
             this.Controls.Add(this.timeLabel);
@@ -231,6 +243,7 @@
         private System.Windows.Forms.Label periodLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button seatplanbutton;
+        private System.Windows.Forms.Label countdownLabel;
     }
 }
 

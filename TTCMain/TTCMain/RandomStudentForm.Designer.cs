@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RandomStudentForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.addStudentButton = new System.Windows.Forms.Button();
             this.addStudentBox = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.chooseButton = new System.Windows.Forms.Button();
             this.studentsBox = new System.Windows.Forms.ListBox();
             this.clearButton = new System.Windows.Forms.Button();
-            this.saveClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,13 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.fileToolStripMenuItem.Text = "Import Class";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
+            // 
+            // saveClassToolStripMenuItem
+            // 
+            this.saveClassToolStripMenuItem.Name = "saveClassToolStripMenuItem";
+            this.saveClassToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.saveClassToolStripMenuItem.Text = "Save Class";
+            this.saveClassToolStripMenuItem.Click += new System.EventHandler(this.saveClassToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -127,6 +134,7 @@
             this.studentsBox.Name = "studentsBox";
             this.studentsBox.Size = new System.Drawing.Size(131, 303);
             this.studentsBox.TabIndex = 7;
+            this.studentsBox.SelectedIndexChanged += new System.EventHandler(this.studentsBox_SelectedIndexChanged);
             this.studentsBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.studentsBox_MouseDown);
             this.studentsBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.studentsBox_MouseMove);
             // 
@@ -140,13 +148,6 @@
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
-            // 
-            // saveClassToolStripMenuItem
-            // 
-            this.saveClassToolStripMenuItem.Name = "saveClassToolStripMenuItem";
-            this.saveClassToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
-            this.saveClassToolStripMenuItem.Text = "Save Class";
-            this.saveClassToolStripMenuItem.Click += new System.EventHandler(this.saveClassToolStripMenuItem_Click);
             // 
             // label1
             // 
