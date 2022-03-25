@@ -190,9 +190,9 @@
             // countdownLabel
             // 
             this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countdownLabel.Location = new System.Drawing.Point(621, 77);
+            this.countdownLabel.Location = new System.Drawing.Point(611, 77);
             this.countdownLabel.Name = "countdownLabel";
-            this.countdownLabel.Size = new System.Drawing.Size(120, 23);
+            this.countdownLabel.Size = new System.Drawing.Size(130, 37);
             this.countdownLabel.TabIndex = 11;
             this.countdownLabel.Text = "Countdown";
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
