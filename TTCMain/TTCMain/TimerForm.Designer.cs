@@ -38,6 +38,7 @@
             this.startButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.popOutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,11 +131,28 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // popOutButton
+            // 
+            this.popOutButton.BackColor = System.Drawing.Color.White;
+            this.popOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("popOutButton.BackgroundImage")));
+            this.popOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.popOutButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.popOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.popOutButton.Image = ((System.Drawing.Image)(resources.GetObject("popOutButton.Image")));
+            this.popOutButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.popOutButton.Location = new System.Drawing.Point(211, 20);
+            this.popOutButton.Name = "popOutButton";
+            this.popOutButton.Size = new System.Drawing.Size(20, 20);
+            this.popOutButton.TabIndex = 15;
+            this.popOutButton.UseVisualStyleBackColor = false;
+            this.popOutButton.Click += new System.EventHandler(this.popOutButton_Click);
+            // 
             // TimerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 297);
+            this.Controls.Add(this.popOutButton);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.add10);
@@ -163,5 +181,6 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button popOutButton;
     }
 }

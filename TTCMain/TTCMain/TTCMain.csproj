@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalogueClockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalogueClockForm.Designer.cs">
+      <DependentUpon>AnalogueClockForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClockForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,15 @@
     <Compile Include="TimerForm.Designer.cs">
       <DependentUpon>TimerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimerPopOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerPopOutForm.Designer.cs">
+      <DependentUpon>TimerPopOutForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnalogueClockForm.resx">
+      <DependentUpon>AnalogueClockForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClockForm.resx">
       <DependentUpon>ClockForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimerForm.resx">
       <DependentUpon>TimerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerPopOutForm.resx">
+      <DependentUpon>TimerPopOutForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

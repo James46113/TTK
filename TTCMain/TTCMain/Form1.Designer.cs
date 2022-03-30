@@ -45,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.seatplanbutton = new System.Windows.Forms.Button();
             this.countdownLabel = new System.Windows.Forms.Label();
+            this.AnalogueClockButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +89,7 @@
             this.clockButton.Name = "clockButton";
             this.clockButton.Size = new System.Drawing.Size(102, 88);
             this.clockButton.TabIndex = 3;
-            this.clockButton.Text = "Clock";
+            this.clockButton.Text = "Digital Clock";
             this.clockButton.UseVisualStyleBackColor = true;
             this.clockButton.Click += new System.EventHandler(this.clockButton_Click);
             // 
@@ -103,7 +104,7 @@
             this.themeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(753, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(835, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,7 +155,7 @@
             // 
             this.periodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.periodLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.periodLabel.Location = new System.Drawing.Point(557, 24);
+            this.periodLabel.Location = new System.Drawing.Point(637, 24);
             this.periodLabel.Name = "periodLabel";
             this.periodLabel.Size = new System.Drawing.Size(184, 53);
             this.periodLabel.TabIndex = 8;
@@ -190,18 +191,30 @@
             // countdownLabel
             // 
             this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countdownLabel.Location = new System.Drawing.Point(611, 77);
+            this.countdownLabel.Location = new System.Drawing.Point(691, 77);
             this.countdownLabel.Name = "countdownLabel";
             this.countdownLabel.Size = new System.Drawing.Size(130, 37);
             this.countdownLabel.TabIndex = 11;
             this.countdownLabel.Text = "Countdown";
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // AnalogueClockButton
+            // 
+            this.AnalogueClockButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnalogueClockButton.Location = new System.Drawing.Point(694, 117);
+            this.AnalogueClockButton.Name = "AnalogueClockButton";
+            this.AnalogueClockButton.Size = new System.Drawing.Size(102, 88);
+            this.AnalogueClockButton.TabIndex = 12;
+            this.AnalogueClockButton.Text = "Analogue Clock";
+            this.AnalogueClockButton.UseVisualStyleBackColor = true;
+            this.AnalogueClockButton.Click += new System.EventHandler(this.AnalogueClockButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 231);
+            this.ClientSize = new System.Drawing.Size(835, 231);
+            this.Controls.Add(this.AnalogueClockButton);
             this.Controls.Add(this.countdownLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.seatplanbutton);
@@ -244,6 +257,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button seatplanbutton;
         private System.Windows.Forms.Label countdownLabel;
+        private System.Windows.Forms.Button AnalogueClockButton;
     }
 }
 

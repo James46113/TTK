@@ -195,5 +195,11 @@ namespace TTCMain
             SeatingplangenForm f = new SeatingplangenForm();
             f.Show();
         }
+
+        private void AnalogueClockButton_Click(object sender, EventArgs e)
+        {
+            AnalogueClockForm acf = new AnalogueClockForm();
+            acf.Show();
+        }
     }
 }

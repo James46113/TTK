@@ -71,3 +71,5 @@ C:\Users\james\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.Generat
 C:\Users\james\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.csproj.CoreCompileInputs.cache
 C:\Users\james\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.exe
 C:\Users\james\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.pdb
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.TimerPopOutForm.resources
+C:\Users\18caroej\Source\Repos\TTK\TTCMain\TTCMain\obj\Debug\TTCMain.AnalogueClockForm.resources

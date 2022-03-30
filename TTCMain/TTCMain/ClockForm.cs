@@ -65,8 +65,6 @@ namespace TTCMain
 
         private void ClockForm_Load(object sender, EventArgs e)
         {
-            closeButton.FlatStyle = FlatStyle.Flat;
-            closeButton.FlatAppearance.BorderSize = 0;
 
             if (Form1.theme == "dark")
             {

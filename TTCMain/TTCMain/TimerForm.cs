@@ -12,7 +12,7 @@ namespace TTCMain
 {
     public partial class TimerForm : Form
     {
-        float countdown = 0;
+        static public float countdown = 0;
         public Point MouseDownLocation;
         public TimerForm()
         {
@@ -220,6 +220,12 @@ namespace TTCMain
                 startButton.ForeColor = Color.White;
                 Reset.ForeColor = Color.White;
             }
+        }
+
+        private void popOutButton_Click(object sender, EventArgs e)
+        {
+            TimerPopOutForm timerPopOutForm = new TimerPopOutForm();
+            timerPopOutForm.Show();
         }
     }
 
