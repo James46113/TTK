@@ -163,6 +163,7 @@ namespace TTCMain
         {
             label2.ForeColor = Color.FromArgb(238, 125, 0);
             periodLabel.ForeColor = Color.FromArgb(0, 155, 180);
+            countdownLabel.ForeColor = Color.FromArgb(0, 155, 180);
         }
 
         private void label2_MouseDown(object sender, MouseEventArgs e)
@@ -185,6 +186,16 @@ namespace TTCMain
         {
             AnalogueClockForm acf = new AnalogueClockForm();
             acf.Show();
+        }
+
+        private void countdownLabel_MouseDown(object sender, MouseEventArgs e)
+        {
+            Mouse_Down(e);
+        }
+
+        private void countdownLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+            Mouse_Move(e);
         }
     }
 }

@@ -185,7 +185,7 @@ namespace TTCMain
 
         private List<string> LoadClass()
         {
-            int[] times = { 515, 575, 630, 615, 730, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
+            int[] times = { 510, 575, 630, 675, 730, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
             int timeNum = int.Parse(DateTime.Now.ToString("HH")) * 60 + int.Parse(DateTime.Now.ToString("mm")); // A calculation of the current time num, calculated by 60*hours + minuites
             int ind = 0;  // Index of the lesson in the array
 
@@ -220,7 +220,7 @@ namespace TTCMain
         {
             List<List<List<string>>> classData = GetAllData(); // Gets all the student data
 
-            int[] times = { 515, 575, 630, 615, 730, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
+            int[] times = { 510, 575, 630, 675, 730, 820, 875, 930, 990, 1440 }; // A list of the times when different periods start, calculated by 60*hours + minuites
             int timeNum = int.Parse(DateTime.Now.ToString("HH")) * 60 + int.Parse(DateTime.Now.ToString("mm")); // A calculation of the current time num, calculated by 60*hours + minuites
             int ind = 0;  // Index of the lesson in the array
             string result = ""; // Final result of the changed values

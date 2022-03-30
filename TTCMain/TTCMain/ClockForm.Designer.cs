@@ -60,6 +60,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ClockForm";
             this.Text = "Clock";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.ClockForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ClockForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ClockForm_MouseMove);

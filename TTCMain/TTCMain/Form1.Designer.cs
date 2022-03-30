@@ -155,7 +155,7 @@
             // 
             this.periodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.periodLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.periodLabel.Location = new System.Drawing.Point(637, 24);
+            this.periodLabel.Location = new System.Drawing.Point(637, 13);
             this.periodLabel.Name = "periodLabel";
             this.periodLabel.Size = new System.Drawing.Size(184, 53);
             this.periodLabel.TabIndex = 8;
@@ -170,7 +170,7 @@
             this.label2.ForeColor = System.Drawing.Color.Coral;
             this.label2.Location = new System.Drawing.Point(120, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(482, 63);
+            this.label2.Size = new System.Drawing.Size(541, 63);
             this.label2.TabIndex = 9;
             this.label2.Text = "UTC Teacher Toolkit";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -191,12 +191,14 @@
             // countdownLabel
             // 
             this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countdownLabel.Location = new System.Drawing.Point(691, 77);
+            this.countdownLabel.Location = new System.Drawing.Point(691, 66);
             this.countdownLabel.Name = "countdownLabel";
             this.countdownLabel.Size = new System.Drawing.Size(130, 37);
             this.countdownLabel.TabIndex = 11;
             this.countdownLabel.Text = "Countdown";
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.countdownLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.countdownLabel_MouseDown);
+            this.countdownLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.countdownLabel_MouseMove);
             // 
             // AnalogueClockButton
             // 
@@ -214,8 +216,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 231);
-            this.Controls.Add(this.AnalogueClockButton);
             this.Controls.Add(this.countdownLabel);
+            this.Controls.Add(this.periodLabel);
+            this.Controls.Add(this.AnalogueClockButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.seatplanbutton);
             this.Controls.Add(this.timeLabel);
@@ -225,7 +228,6 @@
             this.Controls.Add(this.timerButton);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.periodLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";

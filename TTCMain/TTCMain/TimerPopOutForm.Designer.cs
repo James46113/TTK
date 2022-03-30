@@ -61,6 +61,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TimerPopOutForm";
             this.Text = "Timer";
+            this.TopMost = true;
             this.ResumeLayout(false);
 
         }

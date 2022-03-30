@@ -59,6 +59,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AnalogueClockForm";
             this.Text = "Clock";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.clockFace)).EndInit();
             this.ResumeLayout(false);
 
