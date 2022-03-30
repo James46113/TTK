@@ -15,7 +15,40 @@ namespace TTCMain
         public RandomStudentForm()
         {
             InitializeComponent();
+            this.AllowDrop = true;
+            this.DragEnter += new DragEventHandler(Form1_DragEnter);
+            this.DragDrop += new DragEventHandler(Form1_DragDrop);
         }
+
+        void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
+        }
+        void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            studentsBox.Items.Clear();
+            names.Clear();
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            //gets the filename            
+            //foreach (string file in files) textBox2.AppendText(file);
+
+            using (StreamReader reader = new StreamReader(files[0]))
+            {
+                while (true)
+                {
+                    string line = reader.ReadLine();
+                    if (line == null)
+                    {
+                        break;
+                    }
+                    studentsBox.Items.Add(line); // Use line.
+                    names.Add(line);
+                }
+            }
+            WriteClass(names);
+        }
+
         List<string> names = new List<string>();
         
         private void chooseButton_Click(object sender, EventArgs e)
