@@ -97,22 +97,7 @@ namespace TTCMain
             {
                 countdownTime = perInd[periodInfoNum] / 60 * 3600 + (perInd[periodInfoNum] % 60) * 60 - (int.Parse(DateTime.Now.ToString("HH")) * 3600 + int.Parse(DateTime.Now.ToString("mm")) * 60 + int.Parse(DateTime.Now.ToString("ss")));
                 Console.WriteLine(countdownTime);
-                if (Convert.ToString((countdownTime % 3600) % 60).Length == 1 & Convert.ToString((countdownTime % 3600) / 60).Length == 1)
-                {
-                    countdownLabel.Text = Convert.ToString(countdownTime / 3600) + ":0" + Convert.ToString((countdownTime % 3600) / 60) + ":0" + Convert.ToString((countdownTime % 3600) % 60);
-                }
-                else if (Convert.ToString((countdownTime % 3600) % 60).Length == 1)
-                {
-                    countdownLabel.Text = Convert.ToString(countdownTime / 3600) + ":" + Convert.ToString((countdownTime % 3600) / 60) + ":0" + Convert.ToString((countdownTime % 3600) % 60);
-                }
-                else if (Convert.ToString((countdownTime % 3600) / 60).Length == 1)
-                {
-                    countdownLabel.Text = Convert.ToString(countdownTime / 3600) + ":0" + Convert.ToString((countdownTime % 3600) / 60) + ":" + Convert.ToString((countdownTime % 3600) % 60);
-                }
-                else
-                {
-                    countdownLabel.Text = Convert.ToString(countdownTime / 3600) + ":" + Convert.ToString((countdownTime % 3600) / 60) + ":" + Convert.ToString((countdownTime % 3600) % 60);
-                }
+                countdownLabel.Text = "-" + (countdownTime / 3600).ToString("00") + ":" + ((countdownTime % 3600) / 60).ToString("00") + ":" + ((countdownTime % 3600) % 60).ToString("00");
             }
         }
 
