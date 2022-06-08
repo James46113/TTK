@@ -267,7 +267,7 @@ namespace TTCMain
                 }
             }
 
-            if (ind != 0 & ind != 13 & (int)(DateTime.Now.DayOfWeek + 6) % 7 < 5) // Checks if it is not before school hours (ind != 0), if it is not after school hours (ind != 13), and if it isn't the weekend ((int)(DateTime.Now.DayOfWeek+6)%7 <5)
+            if (ind != 0 & ind != 9 & (int)(DateTime.Now.DayOfWeek + 6) % 7 < 5) // Checks if it is not before school hours (ind != 0), if it is not after school hours (ind != 13), and if it isn't the weekend ((int)(DateTime.Now.DayOfWeek+6)%7 <5)
             {
                 classData[(int)(DateTime.Now.DayOfWeek + 6) % 7][ind - 1] = names; // Changes the relavent value of the list to the new lsit 
             }
